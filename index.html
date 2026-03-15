@@ -12,194 +12,109 @@
         }
 
         body {
-            font-family: 'Amazon Ember', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #0F1111;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
             padding-bottom: 70px;
         }
 
         .container {
             max-width: 428px;
             margin: 0 auto;
-            background: #F5F7FA;
+            background: white;
             min-height: 100vh;
         }
 
         /* Header */
         .header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
-            padding: 20px 16px 24px;
+            background: #232F3E;
+            padding: 16px;
             color: white;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 200px;
-            height: 200px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 50%;
-        }
-
-        .header::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 150px;
-            height: 150px;
-            background: rgba(255,255,255,0.08);
-            border-radius: 50%;
         }
 
         .app-name {
-            font-size: 32px;
-            font-weight: 800;
+            font-size: 24px;
+            font-weight: 700;
             margin-bottom: 4px;
-            letter-spacing: -1px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-            position: relative;
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            letter-spacing: -0.5px;
         }
 
         .app-logo {
-            font-size: 36px;
-            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+            font-size: 28px;
         }
 
         .app-name span {
-            background: linear-gradient(45deg, #10b981, #3b82f6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #FF9900;
         }
 
         .app-tagline {
-            font-size: 13px;
-            opacity: 0.95;
-            margin-bottom: 12px;
-            position: relative;
-            z-index: 1;
-            font-weight: 500;
-        }
-
-        .header-left {
-            flex: 1;
-            position: relative;
-            z-index: 1;
-        }
-
-        .location {
             font-size: 12px;
-            margin-bottom: 2px;
             opacity: 0.9;
-        }
-
-        .city {
-            font-size: 15px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .change-city-btn {
-            background: rgba(255,255,255,0.2);
-            color: white;
-            border: 1px solid rgba(255,255,255,0.4);
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 600;
-            cursor: pointer;
-            margin-left: 8px;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s;
-        }
-
-        .change-city-btn:hover {
-            background: rgba(255,255,255,0.3);
-            transform: scale(1.05);
+            font-weight: 400;
         }
 
         /* Search */
         .search-box {
-            padding: 12px 16px;
+            padding: 16px;
             background: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         .search-input {
             width: 100%;
-            padding: 12px 16px;
-            border: 2px solid #e5e7eb;
-            border-radius: 12px;
-            font-size: 15px;
-            transition: all 0.3s;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
         }
 
         .search-input:focus {
             outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+            border-color: #FF9900;
         }
 
         /* Products */
         .products {
-            padding: 8px;
+            padding: 16px;
+            background: #f5f5f5;
         }
 
         .product-card {
             background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
             padding: 16px;
-            margin-bottom: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            transition: all 0.3s;
-        }
-
-        .product-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            margin-bottom: 16px;
         }
 
         .product-name {
             font-size: 16px;
-            font-weight: 700;
+            font-weight: 600;
             margin-bottom: 8px;
-            color: #1e3c72;
-            line-height: 1.3;
+            color: #333;
         }
 
         .product-details {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .product-size {
-            color: #6b7280;
-            font-size: 13px;
-            font-weight: 500;
+            color: #666;
+            font-size: 14px;
         }
 
         .product-price {
-            font-size: 22px;
-            font-weight: 800;
-            background: linear-gradient(135deg, #10b981, #3b82f6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 20px;
+            font-weight: 700;
+            color: #B12704;
+        }
+
+        .product-price::before {
+            content: '₹';
+            font-size: 14px;
+            margin-right: 2px;
         }
 
         .product-store {
@@ -210,26 +125,23 @@
 
         .product-city {
             display: inline-block;
-            background: linear-gradient(135deg, #dbeafe, #d1fae5);
-            color: #1e3c72;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 700;
-            border: 1px solid #bfdbfe;
+            background: #f0f0f0;
+            color: #333;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
         }
 
         /* City Filter */
         .city-filter {
-            padding: 12px 16px;
+            padding: 16px;
             background: white;
-            border-bottom: 1px solid #e5e7eb;
-            margin-bottom: 2px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-bottom: 1px solid #ddd;
         }
 
         .filter-row {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .filter-row:last-child {
@@ -237,71 +149,60 @@
         }
 
         .filter-label {
-            font-size: 12px;
-            font-weight: 700;
-            color: #374151;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 6px;
         }
 
         .city-dropdown {
             width: 100%;
-            padding: 10px 14px;
-            border: 2px solid #e5e7eb;
-            border-radius: 12px;
-            font-size: 14px;
-            font-weight: 600;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 15px;
             background: white;
             cursor: pointer;
-            color: #1e3c72;
-            transition: all 0.3s;
         }
 
         .city-dropdown:focus {
             outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+            border-color: #FF9900;
         }
 
         .filter-buttons {
             display: flex;
-            gap: 6px;
+            gap: 8px;
             flex-wrap: wrap;
         }
 
         .filter-btn {
             padding: 8px 16px;
             background: white;
-            border: 2px solid #e5e7eb;
-            border-radius: 24px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
             font-size: 13px;
-            font-weight: 600;
-            white-space: nowrap;
+            font-weight: 500;
             cursor: pointer;
-            transition: all 0.3s;
-            color: #374151;
+            color: #333;
         }
 
         .filter-btn.active {
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            background: #232F3E;
             color: white;
-            border-color: transparent;
-            transform: scale(1.05);
+            border-color: #232F3E;
         }
 
         .filter-btn:hover {
-            border-color: #3b82f6;
-            transform: translateY(-1px);
+            border-color: #232F3E;
         }
 
         .section-title {
             font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            padding: 12px 16px 8px;
-            color: #1e3c72;
-            background: white;
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding: 0 16px;
+            color: #333;
         }
 
         .no-products {
@@ -316,48 +217,40 @@
         /* Watchlist */
         .watchlist-btn {
             background: white;
-            border: 2px solid #10b981;
-            color: #10b981;
-            padding: 6px 12px;
-            border-radius: 8px;
-            font-size: 12px;
-            font-weight: 700;
+            border: 2px solid #FF9900;
+            color: #FF9900;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s;
         }
 
         .watchlist-btn.active {
-            background: linear-gradient(135deg, #10b981, #059669);
+            background: #FF9900;
             color: white;
-            border-color: transparent;
-        }
-
-        .watchlist-btn:hover {
-            transform: scale(1.05);
         }
 
         .product-actions {
             display: flex;
-            gap: 6px;
-            margin-top: 10px;
+            gap: 8px;
+            margin-top: 12px;
         }
 
         .compare-btn {
             flex: 1;
-            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            background: #232F3E;
             color: white;
             border: none;
-            padding: 8px 12px;
-            border-radius: 8px;
-            font-size: 12px;
-            font-weight: 700;
+            padding: 10px 16px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s;
         }
 
         .compare-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+            background: #131921;
         }
 
         /* Bottom Navigation */
@@ -367,11 +260,10 @@
             left: 0;
             right: 0;
             background: white;
-            border-top: 1px solid #e5e7eb;
+            border-top: 1px solid #ddd;
             display: flex;
             justify-content: space-around;
-            padding: 8px 0;
-            box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+            padding: 10px 0;
             max-width: 428px;
             margin: 0 auto;
             z-index: 100;
@@ -383,20 +275,13 @@
             flex-direction: column;
             align-items: center;
             gap: 4px;
-            padding: 4px 8px;
+            padding: 4px;
             cursor: pointer;
-            color: #6b7280;
-            text-decoration: none;
-            transition: all 0.3s;
+            color: #666;
         }
 
         .nav-item.active {
-            color: #3b82f6;
-        }
-
-        .nav-item:hover {
-            color: #3b82f6;
-            transform: scale(1.05);
+            color: #FF9900;
         }
 
         .nav-icon {
@@ -404,32 +289,29 @@
         }
 
         .nav-label {
-            font-size: 10px;
-            font-weight: 600;
+            font-size: 11px;
+            font-weight: 500;
         }
 
         .watchlist-badge {
             position: absolute;
             top: -4px;
             right: -6px;
-            background: linear-gradient(135deg, #ef4444, #dc2626);
+            background: #B12704;
             color: white;
             font-size: 10px;
             font-weight: 700;
             padding: 2px 6px;
             border-radius: 10px;
-            min-width: 18px;
-            text-align: center;
         }
 
         /* Cocktail Suggestion */
         .cocktail-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 16px;
+            background: #232F3E;
+            border-radius: 8px;
             padding: 20px;
             margin: 8px;
             color: white;
-            box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
         }
 
         .cocktail-header {
@@ -908,14 +790,13 @@
         .age-gate-btn {
             width: 100%;
             padding: 14px;
-            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            background: #232F3E;
             color: white;
             border: none;
-            border-radius: 12px;
+            border-radius: 4px;
             font-size: 16px;
-            font-weight: 700;
+            font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s;
         }
 
         .age-gate-btn:disabled {
@@ -924,8 +805,7 @@
         }
 
         .age-gate-btn:not(:disabled):hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+            background: #131921;
         }
     </style>
 </head>
@@ -967,13 +847,6 @@
                 Bottle<span>Buddy</span>
             </div>
             <div class="app-tagline">🇮🇳 India's Best Liquor Price Comparison Platform</div>
-            <div class="header-left">
-                <div class="location">📍 Showing prices for</div>
-                <div class="city">
-                    <span id="currentCity">All Cities</span>
-                    <button class="change-city-btn" id="changeCityBtn">Change</button>
-                </div>
-            </div>
         </div>
 
         <!-- City Filter -->
@@ -1022,10 +895,10 @@
     </div>
 
     <!-- Disclaimer -->
-    <div style="background: #F5F7FA; padding: 20px 16px; margin-bottom: 70px; border-top: 1px solid #e5e7eb;">
+    <div style="background: #FFFFFF; padding: 20px 16px; margin-bottom: 70px; border-top: 1px solid #e5e7eb;">
         <div style="max-width: 428px; margin: 0 auto;">
             <div style="font-size: 11px; color: #6b7280; line-height: 1.6; text-align: center;">
-                <strong style="color: #374151;">Disclaimer:</strong> The prices and product information displayed on this platform are sourced from publicly available websites and third-party sources. While we strive to ensure accuracy, prices may vary and are subject to change without notice. The information provided is for informational purposes only and should not be construed as an offer to sell or a solicitation to purchase any products. We do not guarantee the accuracy, completeness, or reliability of any pricing data. Users are advised to verify current prices and product availability directly with authorized retailers before making any purchase decisions. BottleBuddy is not responsible for any discrepancies, errors, or omissions in the displayed information.
+                <strong style="color: #000000;">Disclaimer:</strong> The prices and product information displayed on this platform are sourced from publicly available websites and third-party sources. While we strive to ensure accuracy, prices may vary and are subject to change without notice. The information provided is for informational purposes only and should not be construed as an offer to sell or a solicitation to purchase any products. We do not guarantee the accuracy, completeness, or reliability of any pricing data. Users are advised to verify current prices and product availability directly with authorized retailers before making any purchase decisions. BottleBuddy is not responsible for any discrepancies, errors, or omissions in the displayed information.
             </div>
         </div>
     </div>
@@ -1148,11 +1021,10 @@
     <!-- Cocktail Modal -->
     <div class="modal-overlay" id="cocktailModal">
         <div class="modal-content">
-            <button class="modal-close" onclick="closeCocktailModal()">&times;</button>
-            <div class="cocktail-card" style="margin: 0;">
+            <div class="cocktail-card" style="margin: 0; position: relative;">
+                <button class="modal-close" onclick="closeCocktailModal()" style="position: absolute; top: 10px; right: 10px; background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); color: white; width: 32px; height: 32px; border-radius: 50%; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; line-height: 1;">&times;</button>
                 <div class="cocktail-header">
                     <div class="cocktail-title">🍸 Cocktail Recipes</div>
-                    <div class="cocktail-icon">🎯</div>
                 </div>
                 <div class="cocktail-name" id="cocktailName">Mojito</div>
                 <div class="cocktail-description" id="cocktailDescription">
@@ -1440,22 +1312,22 @@
             noProducts.style.display = 'none';
             
             container.innerHTML = filtered.map(product => `
-                <div class="product-card">
-                    <div class="product-name">${product.name}</div>
-                    <div class="product-details">
-                        <span class="product-size">${product.size} • ${product.type}</span>
-                        <span class="product-price">₹${product.price.toLocaleString('en-IN')}</span>
+                    <div class="product-card">
+                        <div class="product-name">${product.name}</div>
+                        <div class="product-details">
+                            <span class="product-size">${product.size} • ${product.type}</span>
+                            <span class="product-price">${product.price.toLocaleString('en-IN')}</span>
+                        </div>
+                        <div style="margin-top: 8px;">
+                            <span class="product-city">${product.city}, ${product.state}</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="compare-btn" onclick="compareProduct('${product.id}')">Compare</button>
+                            <button class="watchlist-btn ${watchlist.has(product.id) ? 'active' : ''}" onclick="toggleWatchlist('${product.id}')">
+                                ${watchlist.has(product.id) ? '❤️ Saved' : '🤍 Save'}
+                            </button>
+                        </div>
                     </div>
-                    <div style="margin-top: 8px;">
-                        <span class="product-city">${product.city}, ${product.state}</span>
-                    </div>
-                    <div class="product-actions">
-                        <button class="compare-btn" onclick="compareProduct('${product.id}')">Compare</button>
-                        <button class="watchlist-btn ${watchlist.has(product.id) ? 'active' : ''}" onclick="toggleWatchlist('${product.id}')">
-                            ${watchlist.has(product.id) ? '❤️ Saved' : '🤍 Save'}
-                        </button>
-                    </div>
-                </div>
             `).join('');
         }
 
@@ -1492,7 +1364,6 @@
             const savedCity = localStorage.getItem('selectedCity');
             if (savedCity) {
                 currentFilter = savedCity;
-                document.getElementById('currentCity').textContent = savedCity;
                 
                 // Set dropdown value
                 document.getElementById('cityDropdown').value = savedCity;
@@ -1518,7 +1389,7 @@
         function checkButton() {
             if (citySelect.value && ageConfirm.checked) {
                 enterBtn.disabled = false;
-                enterBtn.style.background = 'linear-gradient(135deg, #3b82f6, #2563eb)';
+                enterBtn.style.background = '#232F3E';
                 enterBtn.style.cursor = 'pointer';
             } else {
                 enterBtn.disabled = true;
@@ -1540,7 +1411,6 @@
             
             // Set the city filter in the app
             currentFilter = city;
-            document.getElementById('currentCity').textContent = city;
             
             // Set dropdown value
             document.getElementById('cityDropdown').value = city;
@@ -1609,10 +1479,6 @@
         document.getElementById('cityDropdown').addEventListener('change', (e) => {
             currentFilter = e.target.value;
             
-            // Update header
-            const cityName = currentFilter === 'all' ? 'All Cities' : currentFilter;
-            document.getElementById('currentCity').textContent = cityName;
-            
             // Re-render
             renderProducts();
         });
@@ -1642,12 +1508,11 @@
             currentType = 'all';
             searchQuery = '';
             
-            // Update city dropdown and header
+            // Update city dropdown
             const cityDropdown = document.getElementById('cityDropdown');
             if (cityDropdown) {
                 cityDropdown.value = 'all';
             }
-            document.getElementById('currentCity').textContent = 'All Cities';
             
             // Clear search
             const searchInput = document.getElementById('searchInput');
@@ -1872,14 +1737,6 @@
         document.getElementById('searchInput').addEventListener('input', (e) => {
             searchQuery = e.target.value;
             renderProducts();
-        });
-
-        // Change City button
-        document.getElementById('changeCityBtn').addEventListener('click', () => {
-            // Clear age verification and reload
-            localStorage.removeItem('ageVerified');
-            localStorage.removeItem('selectedCity');
-            location.reload();
         });
 
         // Initial render
