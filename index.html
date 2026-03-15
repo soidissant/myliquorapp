@@ -12,67 +12,35 @@
         }
 
         body {
-            font-family: 'Amazon Ember', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            background: #EAEDED;
-            color: #0F1111;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #f5f5f5;
+            color: #333;
             padding-bottom: 70px;
         }
 
         .container {
             max-width: 428px;
             margin: 0 auto;
-            background: #FFFFFF;
+            background: white;
             min-height: 100vh;
         }
 
         /* Header */
         .header {
-            background: linear-gradient(180deg, #232F3E 0%, #131A22 100%);
-            padding: 20px 16px 24px;
+            background: #232F3E;
+            padding: 16px;
             color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 200px;
-            height: 200px;
-            background: rgba(255,153,0,0.1);
-            border-radius: 50%;
-        }
-
-        .header::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 150px;
-            height: 150px;
-            background: rgba(255,153,0,0.08);
-            border-radius: 50%;
         }
 
         .app-name {
-            font-size: 32px;
-            font-weight: 800;
+            font-size: 24px;
+            font-weight: 700;
             margin-bottom: 4px;
-            letter-spacing: -1px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-            position: relative;
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            letter-spacing: -0.5px;
         }
 
         .app-logo {
-            font-size: 36px;
-            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+            font-size: 28px;
         }
 
         .app-name span {
@@ -80,130 +48,73 @@
         }
 
         .app-tagline {
-            font-size: 13px;
-            opacity: 0.95;
-            margin-bottom: 12px;
-            position: relative;
-            z-index: 1;
-            font-weight: 500;
-        }
-
-        .header-left {
-            flex: 1;
-            position: relative;
-            z-index: 1;
-        }
-
-        .location {
             font-size: 12px;
-            margin-bottom: 2px;
             opacity: 0.9;
-        }
-
-        .city {
-            font-size: 15px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .change-city-btn {
-            background: transparent;
-            color: #FF9900;
-            border: 1px solid #FF9900;
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 11px;
-            font-weight: 600;
-            cursor: pointer;
-            margin-left: 8px;
-            transition: all 0.2s;
-        }
-
-        .change-city-btn:hover {
-            background: rgba(255, 153, 0, 0.1);
+            font-weight: 400;
         }
 
         /* Search */
         .search-box {
-            padding: 12px 16px;
+            padding: 16px;
             background: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
         .search-input {
             width: 100%;
-            padding: 12px 16px;
-            border: 2px solid #e5e7eb;
+            padding: 12px;
+            border: 1px solid #ddd;
             border-radius: 4px;
-            font-size: 15px;
-            transition: all 0.2s;
+            font-size: 16px;
         }
 
         .search-input:focus {
             outline: none;
-            border-color: #007185;
-            box-shadow: 0 0 0 3px rgba(0, 113, 133, 0.15);
+            border-color: #FF9900;
         }
 
         /* Products */
         .products {
-            padding: 8px;
-            background: #F7F8F8;
+            padding: 16px;
+            background: #f5f5f5;
         }
 
         .product-card {
             background: white;
-            border: 1px solid #D5D9D9;
+            border: 1px solid #ddd;
             border-radius: 8px;
             padding: 16px;
-            margin-bottom: 12px;
-            box-shadow: 0 2px 4px rgba(15,17,17,0.15);
-            transition: all 0.2s;
-        }
-
-        .product-card:hover {
-            box-shadow: 0 4px 8px rgba(15,17,17,0.2);
+            margin-bottom: 16px;
         }
 
         .product-name {
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 600;
             margin-bottom: 8px;
-            color: #007185;
-            line-height: 1.3;
-        }
-
-        .product-name:hover {
-            color: #C7511F;
-            text-decoration: underline;
+            color: #333;
         }
 
         .product-details {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .product-size {
-            color: #565959;
-            font-size: 13px;
-            font-weight: 400;
+            color: #666;
+            font-size: 14px;
         }
 
         .product-price {
-            font-size: 21px;
-            font-weight: 400;
-            color: #0F1111;
+            font-size: 20px;
+            font-weight: 700;
+            color: #B12704;
         }
 
         .product-price::before {
             content: '₹';
-            font-size: 13px;
-            vertical-align: super;
-            margin-right: 1px;
+            font-size: 14px;
+            margin-right: 2px;
         }
 
         .product-store {
@@ -214,25 +125,23 @@
 
         .product-city {
             display: inline-block;
-            background: #F0F2F2;
-            color: #0F1111;
+            background: #f0f0f0;
+            color: #333;
             padding: 4px 10px;
             border-radius: 4px;
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 600;
-            border: 1px solid #D5D9D9;
         }
 
         /* City Filter */
         .city-filter {
-            padding: 12px 16px;
+            padding: 16px;
             background: white;
-            border-bottom: 1px solid #D5D9D9;
-            margin-bottom: 2px;
+            border-bottom: 1px solid #ddd;
         }
 
         .filter-row {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .filter-row:last-child {
@@ -240,48 +149,42 @@
         }
 
         .filter-label {
-            font-size: 12px;
-            font-weight: 700;
-            color: #0F1111;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
             margin-bottom: 6px;
         }
 
         .city-dropdown {
             width: 100%;
-            padding: 8px 12px;
-            border: 1px solid #888C8C;
+            padding: 10px;
+            border: 1px solid #ddd;
             border-radius: 4px;
-            font-size: 14px;
-            font-weight: 400;
+            font-size: 15px;
             background: white;
             cursor: pointer;
-            color: #0F1111;
-            transition: all 0.2s;
         }
 
         .city-dropdown:focus {
             outline: none;
-            border-color: #007185;
-            box-shadow: 0 0 0 3px rgba(0, 113, 133, 0.15);
+            border-color: #FF9900;
         }
 
         .filter-buttons {
             display: flex;
-            gap: 6px;
+            gap: 8px;
             flex-wrap: wrap;
         }
 
         .filter-btn {
-            padding: 7px 15px;
+            padding: 8px 16px;
             background: white;
-            border: 1px solid #D5D9D9;
+            border: 1px solid #ddd;
             border-radius: 20px;
             font-size: 13px;
-            font-weight: 400;
-            white-space: nowrap;
+            font-weight: 500;
             cursor: pointer;
-            transition: all 0.2s;
-            color: #0F1111;
+            color: #333;
         }
 
         .filter-btn.active {
@@ -292,16 +195,14 @@
 
         .filter-btn:hover {
             border-color: #232F3E;
-            box-shadow: 0 2px 5px rgba(213,217,217,.5);
         }
 
         .section-title {
-            font-size: 17px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            padding: 12px 16px 8px;
-            color: #0F1111;
-            background: #F7F8F8;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            padding: 0 16px;
+            color: #333;
         }
 
         .no-products {
@@ -315,15 +216,14 @@
 
         /* Watchlist */
         .watchlist-btn {
-            background: transparent;
-            border: 1px solid #FF9900;
+            background: white;
+            border: 2px solid #FF9900;
             color: #FF9900;
-            padding: 6px 12px;
+            padding: 8px 16px;
             border-radius: 4px;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.2s;
         }
 
         .watchlist-btn.active {
@@ -331,34 +231,26 @@
             color: white;
         }
 
-        .watchlist-btn:hover {
-            background: #FF9900;
-            color: white;
-        }
-
         .product-actions {
             display: flex;
-            gap: 6px;
-            margin-top: 10px;
+            gap: 8px;
+            margin-top: 12px;
         }
 
         .compare-btn {
             flex: 1;
-            background: #FFD814;
-            color: #0F1111;
-            border: 1px solid #FCD200;
-            padding: 8px 12px;
-            border-radius: 8px;
+            background: #232F3E;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 4px;
             font-size: 13px;
             font-weight: 600;
             cursor: pointer;
-            box-shadow: 0 2px 5px rgba(213,217,217,.5);
-            transition: all 0.2s;
         }
 
         .compare-btn:hover {
-            background: #F7CA00;
-            box-shadow: 0 4px 8px rgba(213,217,217,.7);
+            background: #131921;
         }
 
         /* Bottom Navigation */
@@ -368,11 +260,10 @@
             left: 0;
             right: 0;
             background: white;
-            border-top: 1px solid #e5e7eb;
+            border-top: 1px solid #ddd;
             display: flex;
             justify-content: space-around;
-            padding: 8px 0;
-            box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+            padding: 10px 0;
             max-width: 428px;
             margin: 0 auto;
             z-index: 100;
@@ -384,19 +275,13 @@
             flex-direction: column;
             align-items: center;
             gap: 4px;
-            padding: 4px 8px;
+            padding: 4px;
             cursor: pointer;
-            color: #6b7280;
-            text-decoration: none;
-            transition: all 0.3s;
+            color: #666;
         }
 
         .nav-item.active {
-            color: #007185;
-        }
-
-        .nav-item:hover {
-            color: #007185;
+            color: #FF9900;
         }
 
         .nav-icon {
@@ -418,18 +303,15 @@
             font-weight: 700;
             padding: 2px 6px;
             border-radius: 10px;
-            min-width: 18px;
-            text-align: center;
         }
 
         /* Cocktail Suggestion */
         .cocktail-card {
-            background: linear-gradient(135deg, #232F3E 0%, #131A22 100%);
+            background: #232F3E;
             border-radius: 8px;
             padding: 20px;
             margin: 8px;
             color: white;
-            box-shadow: 0 2px 4px rgba(15,17,17,0.15);
         }
 
         .cocktail-header {
@@ -907,27 +789,23 @@
 
         .age-gate-btn {
             width: 100%;
-            padding: 12px;
-            background: #FFD814;
-            color: #0F1111;
-            border: 1px solid #FCD200;
-            border-radius: 8px;
-            font-size: 15px;
+            padding: 14px;
+            background: #232F3E;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
             font-weight: 600;
             cursor: pointer;
-            box-shadow: 0 2px 5px rgba(213,217,217,.5);
-            transition: all 0.2s;
         }
 
         .age-gate-btn:disabled {
             background: #ccc;
-            border-color: #ccc;
             cursor: not-allowed;
-            box-shadow: none;
         }
 
         .age-gate-btn:not(:disabled):hover {
-            background: #F7CA00;
+            background: #131921;
         }
     </style>
 </head>
@@ -1511,14 +1389,11 @@
         function checkButton() {
             if (citySelect.value && ageConfirm.checked) {
                 enterBtn.disabled = false;
-                enterBtn.style.background = '#FFD814';
-                enterBtn.style.borderColor = '#FCD200';
-                enterBtn.style.color = '#0F1111';
+                enterBtn.style.background = '#232F3E';
                 enterBtn.style.cursor = 'pointer';
             } else {
                 enterBtn.disabled = true;
                 enterBtn.style.background = '#ccc';
-                enterBtn.style.borderColor = '#ccc';
                 enterBtn.style.cursor = 'not-allowed';
             }
         }
